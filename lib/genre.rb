@@ -1,3 +1,4 @@
+require 'pry'
 class Genre 
   
   @@all = []
@@ -8,6 +9,7 @@ class Genre
     @name = name
     @songs = []
     @@all << self
+    binding.pry
   end
   
   def self.all 
